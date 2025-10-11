@@ -3,23 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to Ashley’s Website</title>
+  <title>Unbiased Now</title>
   <style>
-    body {font-family: 'Helvetica', sans-serif;
-      background-color: #fff7fa;
-      color: #333;
+    body {font-family: 'Helvetica', Times New Roman, sans-serif;
+      background-color: #f9f9f9;
+      color: #222;
+      margin: 0;
+      padding: 0;}
+       header {
+      background-color: #111;
+      color: #fff;
+      padding: 20px;
       text-align: center;
-      padding: 50px;}
-    h1 {color: #e07ba3;}
-    a {color: #e07ba3;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    nav {
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #f0f0f0;
       text-decoration: none;
-      font-weight: bold;}
+      padding: 15px 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: #444;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .featured {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .featured img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .featured h2 {
+      margin-top: 15px;
+      color: #111;
+    }
+
+    .articles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    article {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    article h3 {
+      margin-top: 0;
+      color: #111;
+    }
+
+    article p {
+      color: #444;
+    }
+
+    footer {
+      background-color: #111;
+      color: #eee;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
-  <h1>🌸 Welcome to Ashley Searcy’s Site</h1>
-  <p>This is my first website built entirely from scratch!</p>
-  <p>More content coming soon...</p>
-  <a href="mailto:ashley@example.com">Contact Me</a>
+  <header>
+    <h1>Unbiased Now</h1>
+    <p>Independent News & Honest Analysis</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Politics</a>
+    <a href="#">Environment</a>
+    <a href="#">Law</a>
+    <a href="#">Culture</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="container">
+    <section class="featured">
+      <img src="https://via.placeholder.com/1000x400?text=Featured+Story" alt="Featured Story">
+      <h2>Breaking: Major Environmental Policy Shift Announced</h2>
+      <p>The administration unveils new environmental protections aimed at curbing pollution and advancing renewable energy goals. Experts weigh in on what this means for industry and the planet.</p>
+      <a href="#">Read more →</a>
+    </section>
+
+    <section class="articles">
+      <article>
+        <h3>Global Climate Report Highlights Urgent Need for Action</h3>
+        <p>Scientists warn that the window for preventing irreversible damage is narrowing, urging stronger international cooperation.</p>
+        <a href="#">Read more →</a>
+      </article>
+
+      <article>
+        <h3>Supreme Court Hears Landmark Environmental Case</h3>
+        <p>The decision could redefine the scope of federal environmental protections for years to come.</p>
+        <a href="#">Read more →</a>
+      </article>
+
+      <article>
+        <h3>Local Communities Lead in Renewable Energy Adoption</h3>
+        <p>Small towns across the country are showing how grassroots innovation can drive national progress toward sustainability.</p>
+        <a href="#">Read more →</a>
+      </article>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Unbiased Now. All rights reserved.</p>
+  </footer>
 </body>
 </html>
