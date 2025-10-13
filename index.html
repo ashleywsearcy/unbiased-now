@@ -149,6 +149,18 @@
   article h3 {
     font-size: 1.1rem;
   }
+  
+  figure {
+  margin: 0;
+}
+
+.tiny-caption {
+  font-size: 0.7rem;       /* very small text */
+  color: #555;             /* light gray */
+  text-align: right;       /* or 'center' if you prefer */
+  margin-top: 2px;         /* just a tiny bit of space under image */
+  line-height: 1;          /* keeps it compact */
+}
 }
   </style>
 </head>
@@ -170,7 +182,10 @@
 
   <div class="container">
     <section class="featured">
-      <img src="gaza photo.jpeg" alt="Featured Story">
+      <figure> 
+        <img src="gaza photo.jpeg" alt="Featured Story"> 
+        <figcaption class = "tiny-caption">[2024] UNRWA</figcaption>
+      </figure>
       <h2>The Israel/Palestine Ceasefire: Is War Really Over? </h2>
       <p> What to know about the historical ceasefire.</p>
       <a href="article1.html">Read more →</a>
