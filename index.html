@@ -4,12 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Unbiased Now</title>
-  <header>
-     <h1>
-    <span style="color: blue;">Unbiased</span> <span style="color: red;">Now</span>
-  </h1>
-  <p>independent news committed to delivering you the truth</p>
-</body>
+
   <style>
     body {font-family: 'Times New Roman', Times New Roman, sans-serif;
       background-color: #faf7f2; /* main background */
@@ -31,6 +26,38 @@
     header p {
       font-size: 1.2rem;
       color: #000000; /* header text */
+    }
+
+    .blue { 
+      color: #1290ff; /* blue for 'Unbiased' */
+    }
+
+    .red { 
+      color: #e63946; /* red for 'Now' */
+    }
+
+    nav {
+      background-color: #464747; /* directory top tab color */
+      display: flex; 
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a { 
+      color: #f0f0f0;
+      text-decoration: none;
+      padding: 15px 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: #4b7fc2 /* directory tab color hover */
+    }
+
+    .container { 
+      max-width: 1000px;
+      margin: 40px auto; 
+      padding: 0 20px;
     }
 
     .featured h2 {
