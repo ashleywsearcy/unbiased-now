@@ -1,59 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Politics | Unbiased Now</title>
-  <link rel="stylesheet" href="style.css">
-
-<style>
-  body {font-family: 'Nunito', sans-serif;
-      background-color: #e9e7e3; /* main background */
-      color: #000000; /* text color under featured story */
+  <title>Unbiased Now</title>
+  <style>
+    body {font-family: 'Times New Roman', Times New Roman, sans-serif;
+      background-color: #ffffff;
+      color: #ff9393;
       margin: 0;
       padding: 0;}
        header {
-      background-color: #e9e7e3; /* header background */
+      background-color: #000000;
+      color: #fff;
       padding: 20px;
       text-align: center;
     }
 
-   header h1 {
+    header h1 {
       margin: 0;
       font-size: 3.5rem;
       font-weight: 800;
-      font-family: 'Nunito', serif;
     }
 
     header p {
       font-size: 1.2rem;
-      color: #000000; /* header text */
-    }
-
-    .blue { 
-      color: #1290ff; /* blue for 'Unbiased' */
-    }
-
-    .red { 
-      color: #e63946; /* red for 'Now' */
-    }
-
-   nav a { 
-      color: #f0f0f0;
-      text-decoration: none;
-      padding: 15px 20px;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      background-color: #4b7fc2 /* directory tab color hover */
-    }
-
-    .container { 
-      max-width: 1000px;
-      margin: 40px auto; 
-      padding: 0 20px;
+      color: #ccc;
     }
 
     .featured h2 {
@@ -61,13 +33,13 @@
       font-weight: 700;
     }
 
-  article h3 {
+    article h3 {
       font-size: 1.4rem;
       font-weight: 600;
     }
 
     nav {
-      background-color: #969696; /* directory top tab color */
+      background-color: #222;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
@@ -81,10 +53,10 @@
     }
 
     nav a:hover {
-      background-color: #4b7fc2; /* directory tab hover color */
+      background-color: #444;
     }
 
-   .container {
+    .container {
       max-width: 1000px;
       margin: 40px auto;
       padding: 0 20px;
@@ -100,7 +72,7 @@
 
     .featured img {
       width: 100%;
-      border-radius: 5px;
+      border-radius: 10px;
     }
 
     .featured h2 {
@@ -108,7 +80,7 @@
       color: #111;
     }
 
-  .articles {
+    .articles {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
@@ -123,16 +95,16 @@
 
     article h3 {
       margin-top: 0;
-      color: #000000; /* bottom story title text color */
+      color: #111;
     }
 
-   article p {
-      color: #2e2e2e; /* bottom story description text color */
+    article p {
+      color: #444;
     }
 
     footer {
-      background-color: #ffffff; /* copy write text background */
-      color: #7a7a7a; /* copy write text */
+      background-color: #ffffff;
+      color: #7a7a7a;
       text-align: center;
       padding: 20px;
       font-size: 0.9em;
@@ -150,18 +122,6 @@
   article h3 {
     font-size: 1.1rem;
   }
-
-  figure {
-  margin: 0;
-}
-
-.tiny-caption {
-  font-size: 0.1rem;       /* very small text */
-  color: #d3d3d3;          /* light gray */
-  text-align: right;       /* or 'center' if you prefer */
-  margin-top: 1px;         /* just a tiny bit of space under image */
-  line-height: 1;          /* keeps it compact */
-}
 }
   </style>
 </head>
@@ -169,27 +129,44 @@
   <header>
     <h1>
       <span class="blue">Unbiased</span> <span class="red">Now</span>
-    </h1>
-    <p>independent news committed delivering you the truth.</p>
-  </header>
+  </h1>
+  <p>independent news committed to delivering you the truth.</p>
+</header>
 
   <nav>
-    <a href="index.html">Latest Stories</a>
-    <a href="politics.html">Politics</a>
+    <a href="#">Latest Stories</a>
+    <a href="#">Politics</a>
     <a href="#">Environment</a>
     <a href="#">Culture</a>
     <a href="#">About Us</a>
   </nav>
 
   <div class="container">
-    <section class="articles">
-      <figure> 
-        <img src="gaza photo.jpeg" alt="Featured Story"> 
-        <figcaption class = "tiny-caption">[2024] UNRWA</figcaption>
-      </figure>
-      <h2>Israel and Palestine's Ceasefire: Is War Really Over?</h2>
-      <p>What to know about the historical ceasefire.</p>
+    <section class="featured">
+      <img src="13418830-1760163216.jpg.webp" alt="Featured Story">
+      <h2>The Israel/Palestine Ceasefire: Is War Really Over? </h2>
+      <p> What to know about the historical ceasefire.</p>
       <a href="article1.html">Read more →</a>
+    </section>
+
+    <section class="articles">
+      <article>
+        <h3>Global Climate Report Highlights Urgent Need for Action</h3>
+        <p>Scientists warn that the window for preventing irreversible damage is narrowing, urging stronger international cooperation.</p>
+        <a href="article1.html">Read more →</a>
+      </article>
+
+      <article>
+        <h3>Supreme Court Hears Landmark Environmental Case</h3>
+        <p>The decision could redefine the scope of federal environmental protections for years to come.</p>
+        <a href="article1.html">Read more →</a>
+      </article>
+
+      <article>
+        <h3>Local Communities Lead in Renewable Energy Adoption</h3>
+        <p>Small towns across the country are showing how grassroots innovation can drive national progress toward sustainability.</p>
+        <a href="#">Read more →</a>
+      </article>
     </section>
   </div>
 
