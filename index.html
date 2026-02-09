@@ -196,44 +196,80 @@
     <a href="#">About Us</a>
   </nav>
 
-  <div class="container">
-    <section class="featured">
-      <h2>Bad Bunny Halftime Performance Divides the Superbowl</h2> 
-      <p> Puerto Rican Artist Benito Antonio Martinez Ocasio, or "Bad Bunny" divides football fans during the 2026 Superbowl of the Seattle Seahawks vs. the New England Patriots. 
-      <a href="article4.html" class="back-link">Read here →</a> </p> 
-      <figure> 
-        <img src="badbunny.jpg" alt="Featured Story"> 
-        <figcaption class = "tiny-caption">[2024] Josh Edelson/AFP via Getty Images</figcaption>
-      </figure>
-    </section>
+ <div class="container">
+  
+  <section class="featured">
+    <h2>Bad Bunny Halftime Performance Divides the Superbowl</h2> 
+    <p>
+      Puerto Rican Artist Benito Antonio Martinez Ocasio, or "Bad Bunny" divides football fans during the 2026 Superbowl of the Seattle Seahawks vs. the New England Patriots. 
+      <a href="article4.html" class="back-link">Read here →</a>
+    </p> 
+
+    <figure> 
+      <img src="badbunny.jpg" alt="Featured Story"> 
+      <figcaption class="tiny-caption">[2024] Josh Edelson/AFP via Getty Images</figcaption>
+    </figure>
+  </section>
 
   <section class="articles">
-      <article>
-        <h3>Israel and Palestine's Ceasefire: Is War Really Over?</h3>
-        <p>What to know about the historical ceasefire. </p>
-        <a href="article2.html" class="back-link">Read here →</a>
-      </article>
     
-    <section class="articles">
-      <article>
-        <h3>900 Hikers Stranded on Mount Everest After Blizzard</h3>
-        <p>At least 900 hikers had to be rescued after being stranded at 16,400 feet in the air in freezing conditions. </p>
-        <a href="article2.html" class="back-link">Read here →</a>
-      </article>
+    <article>
+      <h3>Israel and Palestine's Ceasefire: Is War Really Over?</h3>
+      <p>What to know about the historical ceasefire.</p>
+      <a href="article2.html" class="back-link">Read here →</a>
+    </article>
 
-      <article>
-        <h3>30 Beluga Whales face death or being sent to China</h3>
-        <p>Marineland in Canada faces an impossible decision after experiencing bankruptcy.</p>
-        <a href="article3.html" class="back-link">Read here →</a>
-      </article>
+    <article>
+      <h3>900 Hikers Stranded on Mount Everest After Blizzard</h3>
+      <p>At least 900 hikers had to be rescued after being stranded at 16,400 feet in the air in freezing conditions.</p>
+      <a href="article2.html" class="back-link">Read here →</a>
+    </article>
 
-      <article>
-        <h3>Local Communities Lead in Renewable Energy Adoption</h3>
-        <p>Small towns across the country are showing how grassroots innovation can drive national progress toward sustainability.</p>
-        <a href="article1.html" class="back-link">Read here →</a>
-      </article>
-    </section>
-  </div>
+    <article>
+      <h3>30 Beluga Whales face death or being sent to China</h3>
+      <p>Marineland in Canada faces an impossible decision after experiencing bankruptcy.</p>
+      <a href="article3.html" class="back-link">Read here →</a>
+    </article>
+
+    <article>
+      <h3>Local Communities Lead in Renewable Energy Adoption</h3>
+      <p>Small towns across the country are showing how grassroots innovation can drive national progress toward sustainability.</p>
+      <a href="article1.html" class="back-link">Read here →</a>
+    </article>
+
+  </section>
+
+</div>
+
+  .container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Featured section */
+.featured {
+  margin-bottom: 40px;
+}
+
+/* Articles grid */
+.articles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 per row */
+  gap: 20px;
+}
+
+/* Make all article boxes the same size */
+.articles article {
+  background: #f7f7f7;
+  padding: 16px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* aligns content evenly */
+  min-height: 220px; /* forces equal height */
+}
+
 
   <footer>
     <p>© 2026 Unbiased Now. All rights reserved.</p>
